@@ -6,194 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Calendar.css">
+    <link rel="stylesheet" href="LandingPage.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script defer  type="text/javascript" src='calendar.js'></script>
-    <script defer type="text/javascript" src='sample.js'></script>
-    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
-    
-    <!-- <script defer type="text/javascript" src='drag.js'></script> -->
+    <script defer type="text/javascript" src='LandingPage.js'></script>
+
 </head>
 <body>
     <div >
-        <h1>Getting started with Calendarrr !</h1>
+        <h1>Calendarrr.js !</h1>
 
         <h4>
             This is a javascript library that helps developers deal with dates and calendars, and helps students(end-users) deal with their assignment due dates.
         </h4>
-        
 
-        <h2>How to use this library</h2>
-
-        <h3>
-            This is a library that based on javascript. <br></br>
-            
-            In order to use this library, users need to create a new Calendarrr class in js file and call this class's functions.
-            <br>
-            <br>
-            e.g. let my_calendar = new Calendarrr()
-        </h3>
-        <br>
-        <br>
-        <h2>Available Operations</h2>
-
-        <h1>_____________________________________________________________________</h1>
-        <h3>1. isLeapYear(year)</h3>
-        <h4>Checking whether a year is leap year</h4>
-        <img src="1.PNG" width="400px">
-        <h1>_____________________________________________________________________</h1>
-
-        <h3>2. getBumberOfDates(year, month)</h3>
-        <h4>Calculating how many dates are there in this month.</h4>
-        <img src="2.PNG" width="400px">
-        <h1>_____________________________________________________________________</h1>
-
-        <h3>3. isValidDate(date)</h3>
-        <h4>Checking whether a date is a valid date</h4>
-        <img src="3.PNG" width="400px">
-        <h1>_____________________________________________________________________</h1>
-
-        <h3>4. checkDay(date)        </h3>
-        <h4>Checking what day is it of the date. <br>
-            </h4>
-
-            <h5>e.g. <br>
-                2020, March 5th is Thursday <br>
-                2020, March 7th is Saturday <br>
-                2024, April 7th is Sunday <br></h5>
-
-        <img src="4.PNG" width="400px">
-    
-
-        <h1>_____________________________________________________________________</h1>
-
-        <h3>5. getNextMonth(year, month) / getLastMonth(year, month)
-        </h3>
-        <h4>getting next month/last month
-        </h4>
-        <img src="5.PNG" width="400px">
-        <h1>_____________________________________________________________________</h1>
-
-        <h3>6. numToEng(month)        </h3>
-        <h4>Transferring month number into English</h4>
-        <img src="6.PNG" width="400px">
-        <h1>_____________________________________________________________________</h1>
-
-        <h3>7. checkMonth(year, month)</h3>
-        <h4>Displaying this month's calendar in list mode.
-            Note that the first index of each list represents Sunday
-            </h4>
-        <img src="7.PNG" width="400px">
-        <h1>_____________________________________________________________________</h1>
-
-        <h3>8. checkYear(year)</h3>
-        <h4>Checking this year's calendar in list mode.
-
-            </h4>
-       
-        <h1>_____________________________________________________________________</h1>
-
-        <h3>9. makeMonthCalendar(year, month)
-        </h3>
-        <h4>Making this month's calendar. <br>  For example, Calendarrr.makeMonthCalendar(2021, 11) gives<br>
-
-            </h4>
-            <div id = "example9_1"></div>
-            <h4>
-                After adding classNames,
-            </h4>
-        
-            <div id="example9_2">
-
-            </div>
-
-        
-        
-        <h1>_____________________________________________________________________</h1>
-
-        <h3>10. makeYearCalendar(year)        </h3>
-        <h4>Making this year's clendar. For example, makeMonthCalendar(2022) gives <br>
-            </h4>
-
-            <div id="example_10"></div>
-    
-        <h1>_____________________________________________________________________</h1>
-
-        
-        <h3>11. searchDateDay(date, day, year)       </h3>
-        <h4>Search all month of this year that the date matches with the day <br>
-            e.g. searchDateDay(28, 3, 2019) means search all month in 2019 that 28th is Wednesday.
-            </h4>
-
-            <div id="example_10"></div>
-    
-        <h1>_____________________________________________________________________</h1>
-        
-
-        <h3>12. functionalCalendar(year, month)     </h3>
-        <h4>Making functional calendar that allows user to switch month <br>
-            e.g. Calendar.functionalCalendar(2020, 5)
-            </h4>
-
-            <div id="example_12"></div>
-    
-        <h1>_____________________________________________________________________</h1>
+        <!-- <button class="button">Getting Started</button>
+        <button class="button">Examples</button>
+         -->
 
 
-        <h3>13. showSpecificCalendar()       </h3>
-        <h4>Display an arbitrary month calendar
-            </h4>
+        <a href="./API.html"><button class="button">Getting Started</button></a>
+        <a href="./Example.html"><button class="button">Examples</button></a>
 
-            <div id="example_13"></div>
-    
-        <h1>_____________________________________________________________________</h1>
-
-
-        <h3>14. makeEditableMonthCalendar(year, month)       </h3>
-        <h4>Make a editable calendar with specific month 
-            <br>
-            Double click a grid to write note.
-            Click "save" button to exit
-            
-            </h4>
-
-            <div id="example_14"></div>
-    
-        <h1>_____________________________________________________________________</h1>
-
-        <h3>15. makeEditableFunctionalCalendar(year, month)       </h3>
-        <h4>Make a editable calendar that allows user to switch month
-
-            <br>
-            Double click a grid to write note.
-            Click "save" button to exit
-            
-            </h4>
-
-            <div id="example_15"></div>
-    
-        <h1>_____________________________________________________________________</h1>
-
-        <h3>
-            Sample Screenshot
-        </h3>
-
-        <img src="0.PNG">
-
-
-
-        
         
 
         
     
     </div>
 
+    <!-- <div id = "example_one"></div> -->
 
-    <h1>
-        Thank You For Reading! 
-    </h1>
-    Created by <br>
+
+    <h5>
+        Created by <br>
     Chuanyang Qiao
+    </h5>
     
     
 
